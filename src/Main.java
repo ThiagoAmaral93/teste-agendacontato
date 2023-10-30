@@ -1,34 +1,3 @@
-/*public class Main {
-    public static void main(String[] args) {
-        Agenda agenda = new Agenda();
-
-        Contato contato1 = new Contato(1, "João", "123456789");
-        contato1.setEmail("joao@email.com");
-        contato1.setAniversario("01/01/1990");
-
-        Contato contato2 = new Contato(2, "Maria", "987654321");
-        contato2.setEmail("maria@email.com");
-        contato2.setAniversario("02/02/1985");
-
-        agenda.adiciona(contato1);
-        agenda.adiciona(contato2);
-
-        agenda.exibeTodos();
-
-        Contato busca = agenda.busca("João");
-        agenda.exibe(busca);
-
-        boolean removido = agenda.remove(2);
-        if (removido) {
-            System.out.println("Contato removido com sucesso.");
-        } else {
-            System.out.println("Contato não encontrado.");
-        }
-    }
-}*/
-
-
-
 import java.util.Scanner;
 
 public class Main {
