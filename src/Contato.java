@@ -1,3 +1,14 @@
+/**
+ * Trabalho de POO
+ * 
+ * @author Mauricio Soto, Rodrigo Pereira, Thiago Amaral
+ * @version 1.0.0
+ */
+import java.util.Date;
+import java.sql.Timestamp;
+import java.util.regex.Pattern;
+import java.util.regex.Matcher;
+
 public class Contato {
 
   private int ID;
@@ -7,7 +18,7 @@ public class Contato {
   private String aniversario;
 
   public Contato(int ID, String nome, String telefone) {
-    this.ID = this.setID();
+    this.setID();
     this.setNome(nome);
     this.setTelefone(telefone);
   }
@@ -28,7 +39,7 @@ public class Contato {
   }
 
   public void setNome(String nome) {
-    if (nome != null && !nome.isEmpty() && name.length() > 3) {
+    if (nome != null && !nome.isEmpty() && nome.length() > 3) {
       this.nome = nome;
     } else {
       throw new IllegalArgumentException("Nome do contato é obrigatório.");
@@ -40,7 +51,7 @@ public class Contato {
   }
 
   public void setTelefone(String telefone) {
-    if (telefone != null && !telefone.isEmpty() && phone.length() > 7) {
+    if (telefone != null && !telefone.isEmpty() && telefone.length() > 7) {
       this.telefone = telefone;
     } else {
       throw new IllegalArgumentException("Telefone do contato é obrigatório.");
@@ -72,13 +83,5 @@ public class Contato {
 
   public void setAniversario(String aniversario) {
     this.aniversario = aniversario;
-  }
-
-  public void setName(String name) {
-    if (name != null && !name.isEmpty() && name.length() > 3) {
-      this.name = name;
-    } else {
-      System.out.println("Nome Invalido!");
-    }
   }
 }
