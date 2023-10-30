@@ -16,10 +16,9 @@ public class Main {
             int opcao = scanner.nextInt();
             scanner.nextLine(); // Limpa a quebra de linha após a leitura do número
 
-
             int numeroDeContatos = agenda.getCount();
             System.out.println("Número de contatos na agenda: " + numeroDeContatos);
-        
+
             switch (opcao) {
                 case 1:
                     System.out.print("Nome do contato: ");
